@@ -1,12 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Navbar from "@/components/common/Navbar.vue"
+import Tabbar from "@/components/common/Tabbar.vue"
+</script>
 
 <template>
-  <div>
-    <van-button type="primary">主要按钮</van-button>
-    <van-button type="success">成功按钮</van-button>
-    <van-button type="default">默认按钮</van-button>
-    <van-button type="warning">警告按钮</van-button>
-    <van-button type="danger">危险按钮</van-button>
+  <div class="main">
+    <Navbar />
+    <RouterView />
+    <Tabbar />
   </div>
 </template>
 
